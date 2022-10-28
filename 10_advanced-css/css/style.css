@@ -305,7 +305,6 @@ a {
 
 .special-card {
   position: relative;
-  overflow: hidden;
   width: 573px;
   min-height: 258px;
   padding: 40px;
@@ -323,6 +322,7 @@ a {
   top: 0;
   width: 100%;
   height: 100%;
+  border-radius: 15px;
 }
 
 .special-card::after {
@@ -350,9 +350,8 @@ a {
 
 .special-card > * {
   position: relative;
+  z-index: 1;
 }
-
-
 
 .special-card:not(:last-child) {
   margin-bottom: 23px;
@@ -397,19 +396,6 @@ a {
   color: #F0BF5F;
   transition: color 0.3s ease-in-out;
   outline: none;
-}
-
-.arrow-link-befor {
-  position: relative;
-}
-
-.arrow-link-befor::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .arrow-link:active {
@@ -467,6 +453,7 @@ a {
 }
 
 .services-item {
+  position: relative;
   width: 573px;
   min-height: 330px;
   margin-bottom: 23px;
@@ -476,6 +463,36 @@ a {
   background-position: top center;
   background-size: contain;
   background-color: #FFFFFF;
+}
+
+.services-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.services-item::after {
+  content: "";
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border: 1.5px solid #CC9933;
+  opacity: 0;
+}
+
+.services-item:focus-within::after {
+  opacity: 1;
+}
+
+.services-item > * {
+  position: relative;
+  z-index: 1;
 }
 
 .services-item-title {
@@ -627,6 +644,10 @@ a {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.show-more-link:focus {
+  color: #CC9933;
 }
 
 /* tour */
