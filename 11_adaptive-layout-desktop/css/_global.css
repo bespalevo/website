@@ -23,4 +23,25 @@ body {
   font-size: var(--default-fs);
   line-height: var(--default-lh);
   color: var(--dark);
+  background-color: var(--white);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--container-padding);
+  padding-right: var(--container-padding);
+}
+
+.reset-list {
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.reset-btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }

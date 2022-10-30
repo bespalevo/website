@@ -12,4 +12,14 @@
 
   /* цвета */
   --dark: #333333;
+  --white: #ffffff;
+  --orange: #ff9900;
+  --orange-dark: #E1670E;
+
+  /* контейнер */
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+
+  /* transitions */
+  --short: .3s;
 }
