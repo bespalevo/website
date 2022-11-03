@@ -1,6 +1,7 @@
 
 :root {
   /* шрифты */
+  --montserrat: "Montserrat";
   --regular: 400;
   --medium: 500;
   --semibold: 600;
@@ -15,6 +16,7 @@
   --white: #ffffff;
   --orange: #ff9900;
   --orange-dark: #E1670E;
+  --gray-blue: #576b8f;
 
   /* контейнер */
   --container-max-width: 1870px;

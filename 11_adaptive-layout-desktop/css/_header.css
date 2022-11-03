@@ -5,13 +5,13 @@
   padding-bottom: 14px;
   background-color: var(--white);
   box-shadow: 0 5px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 32px 32px;
 }
 
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right: 25px;
 }
 
 .header__logo,
@@ -20,10 +20,11 @@
 }
 
 .header__logo {
-  width: 224px;
-  height: 72px;
+  display: flex;
+  align-items: center;
+  width: 274px;
+  min-height: 72px;
   margin-right: 40px;
-  margin-left: 25px;
 }
 
 .header__navigation,
@@ -38,7 +39,7 @@
 .header__menu {
   flex-wrap: wrap;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 3px;
   font-weight: var(--semibold);
   margin-right: 176px;
 }
