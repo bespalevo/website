@@ -57,3 +57,20 @@ body {
   clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
+
+.section-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 48px;
+  line-height: 59px;
+  font-weight: var(--regular);
+}
+
+.text {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}

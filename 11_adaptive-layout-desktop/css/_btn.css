@@ -1,7 +1,6 @@
 
 .btn {
   display: inline-block;
-  padding: 20px;
   font-family: var(--montserrat), sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -12,8 +11,17 @@
 
 .btn--big {
   max-width: 400px;
-  padding: 24px 35px;
+  padding: 24px 39px;
+  text-align: center;
   font-size: 23px;
   line-height: 29px;
   border-radius: 15px;
+}
+
+.btn--border-accent {
+  padding: 16px 36px;
+  border: 3px solid var(--orange);
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 16px;
 }

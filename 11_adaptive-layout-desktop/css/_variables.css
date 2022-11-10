@@ -9,7 +9,7 @@
   --extrabold: 800;
 
   --default-fs: 16px;
-  --default-lh: 20px;
+  --default-lh: 32px;
 
   /* цвета */
   --dark: #333333;
@@ -17,6 +17,8 @@
   --orange: #ff9900;
   --orange-dark: #E1670E;
   --gray-blue: #576b8f;
+  --dark-transp: rgba(0, 0, 0, 0.5);
+  --lightgray: #CACACA;
 
   /* контейнер */
   --container-max-width: 1870px;

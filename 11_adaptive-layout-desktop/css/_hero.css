@@ -5,7 +5,7 @@
 
 .hero__wrapper {
   position: relative;
-  padding: 105px 80px;
+  padding: 101px 80px;
 }
 
 .hero__content {
@@ -17,11 +17,11 @@
 
 .hero__slider{
   position: absolute;
-  margin-top: 50px;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
+  border-radius: 32px;
   background-color: var(--gray-blue);
   background-image: url('/img/low-angle-photo-of-balconies.jpg');
   background-size: cover;
@@ -30,7 +30,7 @@
 
 .hero__title {
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-size: 70px;
   line-height: 85px;
   font-weight: var(--extrabold);
@@ -45,7 +45,7 @@
 }
 
 .hero__text:last-of-type {
-  padding-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .hero__btn:not(:last-child) {
