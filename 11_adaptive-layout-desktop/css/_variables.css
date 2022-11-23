@@ -16,9 +16,13 @@
   --white: #ffffff;
   --orange: #ff9900;
   --orange-dark: #E1670E;
+  --orange-transp: #FFB84D;
   --gray-blue: #576b8f;
   --dark-transp: rgba(0, 0, 0, 0.5);
   --lightgray: #CACACA;
+  --dark-gray: #666666;
+  --black: #000000;
+
 
   /* контейнер */
   --container-max-width: 1870px;
