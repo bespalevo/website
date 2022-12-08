@@ -13,6 +13,7 @@
 
   /* цвета */
   --dark: #333333;
+  --dark-light: #414141;
   --white: #ffffff;
   --orange: #ff9900;
   --orange-dark: #E1670E;
@@ -22,6 +23,7 @@
   --lightgray: #CACACA;
   --dark-gray: #666666;
   --black: #000000;
+  --lightgreen: #97EE3F;
 
 
   /* контейнер */

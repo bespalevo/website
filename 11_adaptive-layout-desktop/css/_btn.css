@@ -11,6 +11,7 @@
   transition: background-color var(--short);
   outline: none;
   border-radius: 16px;
+  cursor: pointer;
 }
 
 .btn:hover,
