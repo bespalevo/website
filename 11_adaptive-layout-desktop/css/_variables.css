@@ -1,6 +1,7 @@
 
 :root {
   /* шрифты */
+  --montserrat: "Montserrat";
   --regular: 400;
   --medium: 500;
   --semibold: 600;
@@ -8,8 +9,27 @@
   --extrabold: 800;
 
   --default-fs: 16px;
-  --default-lh: 20px;
+  --default-lh: 32px;
 
   /* цвета */
   --dark: #333333;
+  --dark-light: #414141;
+  --white: #ffffff;
+  --orange: #ff9900;
+  --orange-dark: #E1670E;
+  --orange-transp: #FFB84D;
+  --gray-blue: #576b8f;
+  --dark-transp: rgba(0, 0, 0, 0.5);
+  --lightgray: #CACACA;
+  --dark-gray: #666666;
+  --black: #000000;
+  --lightgreen: #97EE3F;
+
+
+  /* контейнер */
+  --container-max-width: 1870px;
+  --container-padding: 50px;
+
+  /* transitions */
+  --short: .3s;
 }
