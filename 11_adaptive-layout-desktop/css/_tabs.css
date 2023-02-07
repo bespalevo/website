@@ -50,6 +50,7 @@
   min-height: 460px;
   margin-top: 10px;
   margin-bottom: 35px;
+  border-radius: 32px;
   background-color: var(--gray-blue);
   background-size: cover;
   background-position: center;
@@ -57,7 +58,6 @@
 
 .tabs__content-wrap--consultation::after {
   background-image: url('../img/how-consult.jpg');
-  border-radius: 32px;
 }
 
 .tabs__content {
@@ -83,7 +83,7 @@
 }
 
 .tabs__text {
-  margin-bottom: 18px;
+  margin-bottom: 50px;
 }
 
 

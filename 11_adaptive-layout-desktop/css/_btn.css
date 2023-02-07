@@ -15,7 +15,7 @@
 }
 
 .btn:hover,
-.bnt:focus {
+.btn:focus {
   background-color: var(--orange-transp);
 }
 

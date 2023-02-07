@@ -40,7 +40,7 @@
 .header__menu {
   flex-wrap: wrap;
   font-size: 18px;
-  line-height: 3px;
+  line-height: 30px;
   font-weight: var(--semibold);
   margin-right: 176px;
 }
