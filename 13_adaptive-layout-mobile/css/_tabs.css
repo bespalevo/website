@@ -1,0 +1,89 @@
+
+.tabs__btns-list {
+  display: flex;
+  margin-bottom: 45px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tabs__btn-item {
+  margin-right: 85px;
+}
+
+.tabs__btn-item:last-child {
+  margin-right: 0;
+}
+
+.tabs__btn {
+  transition: color var(--short);
+}
+
+.tabs__btn.active {
+  color: var(--orange-dark);
+}
+
+.tabs__btn:hover {
+  color: var(--orange);
+  outline: none;
+  cursor: pointer;
+}
+
+.tabs__btn:focus:not(:hover):not(:active) {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.tabs__btn:active {
+  color: var(--orange-dark);
+}
+
+.tabs__content-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.tabs__content-wrap::after {
+  content: "";
+  width: calc(870 / 1770 * 100%);
+  min-height: 460px;
+  margin-top: 10px;
+  margin-bottom: 35px;
+  border-radius: 32px;
+  background-color: var(--gray-blue);
+  background-size: cover;
+  background-position: center;
+}
+
+.tabs__content-wrap--consultation::after {
+  background-image: url('../img/how-consult.jpg');
+}
+
+.tabs__content {
+  width: calc(760 / 1770 * 100%);
+}
+
+.tabs__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.tabs__links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+}
+
+.tabs__link {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.tabs__text {
+  margin-bottom: 50px;
+}
+
+
