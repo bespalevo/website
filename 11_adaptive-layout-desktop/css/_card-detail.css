@@ -5,6 +5,7 @@
   max-width: 870px;
   width: 100%;
   min-height: 622px;
+  border-radius: 32px;
   background-color: var(--gray-blue);
   background-image: url('/img/about-bg.jpg');
   background-size: cover;
@@ -21,7 +22,7 @@
   border-radius: 32px;;
 }
 
-.card--detail__text {
+.card-detail__text {
   max-width: 455px;
   margin-top: 0;
   margin-bottom: 0;
