@@ -51,6 +51,11 @@
 @media (max-width: 1280px) {
   .about {
     padding-top: 17px;
+    padding-bottom: 40px;
+  }
+
+  .about__text {
+    margin-bottom: 59px;
   }
 
   .about__column--small-cards {
@@ -60,6 +65,7 @@
 
   .about__card--small {
     width: 100%;
+    margin-bottom: 0;
   }
 }
 
