@@ -20,6 +20,7 @@ a {
 }
 
 body {
+  min-width: var(--body-min-width);
   font-family: var(--montserrat), sans-serif;
   font-size: var(--default-fs);
   line-height: var(--default-lh);
@@ -73,4 +74,27 @@ body {
 
 .text:last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 1280px) {
+  .text {
+    margin-bottom: 60px;
+  }
+}
+
+@media (max-width: 962px) {
+  .text {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  .text {
+    margin-bottom: 13px;
+  }
 }

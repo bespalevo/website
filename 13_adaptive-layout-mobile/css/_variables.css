@@ -26,10 +26,19 @@
   --lightgreen: #97EE3F;
 
 
-  /* контейнер */
+  /* размеры */
+  --body-min-width: 320px;
   --container-max-width: 1870px;
   --container-padding: 50px;
 
   /* transitions */
   --short: .3s;
+}
+
+@media (max-width: 576px) {
+  :root{
+    --container-padding: 15px;
+    --default-fs: 14px;
+    --default-lh: 28px;
+  }
 }

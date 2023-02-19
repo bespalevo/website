@@ -7,10 +7,10 @@
   max-width: 1235px;
 }
 
-
 .about__cards-wrap {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about__column {
@@ -25,4 +25,61 @@
 
 .about__card:not(:last-child) {
   margin-bottom: 32px;
+}
+
+@media (max-width: 1440px) {
+  .about__column {
+    width: 100%;
+  }
+
+  .about__column:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .about__column--small-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .about__card--small {
+    flex-grow: 0;
+    width: calc(50% - 32px / 2);
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .about {
+    padding-top: 17px;
+  }
+
+  .about__column--small-cards {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .about__card--small {
+    width: 100%;
+  }
+}
+
+/* данный медиа запрос под вопросом, он ни на что не влияет. */
+@media (max-width: 962px) {
+  .about__column {
+    margin-bottom: 30px;;
+  }
+}
+
+@media (max-width: 576px) {
+  .about {
+    padding-top: 30px;
+  }
+
+  .about__card:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  .about__column:not(:last-child) {
+    margin-bottom: 25px;
+  }
 }
