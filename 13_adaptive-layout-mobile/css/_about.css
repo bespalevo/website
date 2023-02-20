@@ -55,7 +55,7 @@
   }
 
   .about__text {
-    margin-bottom: 59px;
+    margin-bottom: 60px;
   }
 
   .about__column--small-cards {
@@ -74,11 +74,20 @@
   .about__column {
     margin-bottom: 30px;;
   }
+
+  .about__text {
+    margin-bottom: 55px;
+ }
+
+ .about__card--small {
+  margin-bottom: -31px;
+ }
 }
 
 @media (max-width: 576px) {
   .about {
     padding-top: 30px;
+    padding-bottom: 33px;
   }
 
   .about__card:not(:last-child) {
@@ -88,4 +97,8 @@
   .about__column:not(:last-child) {
     margin-bottom: 25px;
   }
+
+  .about__text {
+    margin-bottom: 13px;
+ }
 }

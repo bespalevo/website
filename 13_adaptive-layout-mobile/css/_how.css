@@ -13,3 +13,13 @@
     padding-top: 41px;
   }
 }
+
+@media (max-width: 576px) {
+  .how {
+    padding-top: 30px;
+  }
+
+  .how__title {
+    margin-bottom: 16px;
+  }
+}
