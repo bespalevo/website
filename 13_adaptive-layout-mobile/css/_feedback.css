@@ -45,13 +45,14 @@
 .feedback__form-bottom {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .feedback__submit--btn {
   flex-shrink: 0;
   max-width: 269px;
   width: 100%;
-  margin-right: 22px;
+  /* margin-right: 22px; */
 }
 
 .feedback__label {
@@ -100,4 +101,36 @@
 
 .feedback__checkbox:focus ~ .feedback__visual-check {
   border-color: var(--orange);
+}
+
+@media (max-width: 1440px) {
+  .feedback__submit--btn {
+    max-width: 241px;
+  }
+}
+
+@media (max-width: 576px) {
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+
+  .feedback__input {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .feedback__input--textarea {
+    margin-bottom: 26px;
+}
+
+  .feedback__form-bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feedback__submit--btn {
+    width: auto;
+    max-width: 100%;
+    padding: 12px 28px;
+  }
 }
