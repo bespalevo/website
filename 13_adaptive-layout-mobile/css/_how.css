@@ -1,0 +1,34 @@
+
+.how {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.how__title {
+  margin-bottom: 50px;
+}
+
+@media (max-width: 1280px) {
+  .how {
+    padding-top: 41px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .how {
+    margin-bottom: -21px;
+  }
+}
+
+
+@media (max-width: 576px) {
+  .how {
+    padding-top: 30px;
+    padding-bottom: 51px;
+  }
+
+  .how__title {
+    margin-bottom: 16px;
+  }
+}
