@@ -14,6 +14,7 @@
   <script defer src="js/tabs.js"></script>
   <script defer src="js/accordion.min.js"></script>
   <script defer src="js/accordion-init.js"></script>
+  <script defer src="js/burger.js"></script>
 
 </head>
 
@@ -22,7 +23,7 @@
 
   <header class="header">
     <div class="header__container container">
-      <button class="header__burger hamburger hamburger--collapse" type="button">
+      <button class="header__burger hamburger hamburger--collapse js-burger" type="button">
         <span class="hamburger__box">
           <span class="hamburger__inner"></span>
         </span>
@@ -32,13 +33,16 @@
         <img src="img/Logo.svg" alt="logo evklid" width="225" height="72">
       </a>
       <nav class="header__navigation">
-        <ul class="header__menu reset-list">
-          <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Проекты</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Этапы</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Отзывы</a></li>
-          <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
-        </ul>
+        <h2 class="visually-hidden">Навигация по сайту</h2>
+        <div class="header__menu-wrap js-menu-wrap">
+          <ul class="header__menu reset-list">
+            <li class="header__menu-item"><a class="header__menu-link" href="#">О нас</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Проекты</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Этапы</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Отзывы</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
+          </ul>
+        </div>
         <button class="header__search-btn reset-btn" type="button">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="currentColor"></rect>
