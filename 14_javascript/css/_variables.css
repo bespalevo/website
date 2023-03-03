@@ -33,6 +33,7 @@
 
   /* transitions */
   --short: .3s;
+  --medium-tans: .5s;
 
   /* Hero-slider */
   --swiper-pagination-color: #fff;

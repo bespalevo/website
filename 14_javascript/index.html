@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-<link href="css/normalize.css" rel="stylesheet">
-<link href="css/swiper.min.css" rel="stylesheet">
-<link href="css/style.css" rel="stylesheet">
+  <title>Евклид - проектные решения</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/swiper.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-<script defer src="js/swiper.min.js"></script>
-<script defer src="js/hero-slider.js"></script>
+  <script defer src="js/swiper.min.js"></script>
+  <script defer src="js/hero-slider.js"></script>
+  <script defer src="js/tabs.js"></script>
+  <script defer src="js/accordion.min.js"></script>
+  <script defer src="js/accordion-init.js"></script>
+
 </head>
 
 <body>
@@ -105,15 +109,15 @@
       <div class="container">
         <h2 class="how__title section-title">Как мы работаем</h2>
 
-        <div class="how__tabs tabs">
+        <div class="how__tabs tabs js-tabs-wrap">
           <ul class="tabs__btns-list reset-list">
-            <li class="tabs__btn-item"><button class="tabs__btn active reset-btn">1 шаг</button></li>
-            <li class="tabs__btn-item"><button class="tabs__btn reset-btn">2 шаг</button></li>
-            <li class="tabs__btn-item"><button class="tabs__btn reset-btn">3 шаг</button></li>
-            <li class="tabs__btn-item"><button class="tabs__btn reset-btn">4 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn active reset-btn js-tab-btn" data-path="one">1 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn reset-btn js-tab-btn" data-path="two">2 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn reset-btn js-tab-btn" data-path="three">3 шаг</button></li>
+            <li class="tabs__btn-item"><button class="tabs__btn reset-btn js-tab-btn" data-path="four">4 шаг</button></li>
           </ul>
 
-          <div class="tabs__content-wrap tabs__content-wrap--consultation">
+          <div class="tabs__content-wrap active js-tab-content" data-target="one">
             <div class="tabs__content">
               <h3 class="tabs__title">Проводим консультацию</h3>
               <p class="tabs__text text">Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями.
@@ -133,6 +137,68 @@
               </picture>
             </div>
           </div>
+
+          <div class="tabs__content-wrap js-tab-content" data-target="two">
+            <div class="tabs__content">
+              <h3 class="tabs__title">Составляем смету</h3>
+              <p class="tabs__text text">Внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований.</p>
+              <div class="tabs__links-wrap">
+                <a class="tabs__link tabs__link--detail btn" href="#">Подробнее</a>
+                <a class="tabs__link btn btn--border" href="#">Договор</a>
+              </div>
+            </div>
+
+            <div class="tabs__image-wrap">
+              <picture>
+                <source srcset="img/how-consult@two@320.jpg" media="(max-width: 440px)">
+                <source srcset="img/how-consult@two@768.jpg" media="(max-width: 962px)">
+                <source srcset="img/how-consult@two@1024.jpg" media="(max-width: 1280px)">
+                <img class="tabs__image" src="img/how-consult@two@desktop.jpg" alt="Проводим консультацию">
+              </picture>
+            </div>
+          </div>
+
+          <div class="tabs__content-wrap js-tab-content" data-target="three">
+            <div class="tabs__content">
+              <h3 class="tabs__title">Привлекаем подрядчиков</h3>
+              <p class="tabs__text text">Идейные соображения высшего порядка, а также новая модель организационной деятельности требует анализа прогресса профессионального сообщества. Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет выполнить важные задания по разработке прогресса профессионального сообщества.</p>
+              <div class="tabs__links-wrap">
+                <a class="tabs__link tabs__link--detail btn" href="#">Подробнее</a>
+                <a class="tabs__link btn btn--border" href="#">Договор</a>
+              </div>
+            </div>
+
+            <div class="tabs__image-wrap">
+              <picture>
+                <source srcset="img/how-consult@three@320.jpg" media="(max-width: 440px)">
+                <source srcset="img/how-consult@three@768.jpg" media="(max-width: 962px)">
+                <source srcset="img/how-consult@three@1024.jpg" media="(max-width: 1280px)">
+                <img class="tabs__image" src="img/how-consult@three@desktop.jpg" alt="Проводим консультацию">
+              </picture>
+            </div>
+          </div>
+
+          <div class="tabs__content-wrap js-tab-content" data-target="four">
+            <div class="tabs__content">
+              <h3 class="tabs__title">Инспектируем все этапы работ</h3>
+              <p class="tabs__text text">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта: высококачественный прототип будущего проекта напрямую зависит от дальнейших направлений развития. Разнообразный и богатый опыт говорит нам, что новая модель организационной деятельности говорит
+                о возможностях системы массового участия. Принимая во внимание показатели успешности, постоянное информационно-пропагандистское обеспечение нашей деятельности позволяет.</p>
+              <div class="tabs__links-wrap">
+                <a class="tabs__link tabs__link--detail btn" href="#">Подробнее</a>
+                <a class="tabs__link btn btn--border" href="#">Договор</a>
+              </div>
+            </div>
+
+            <div class="tabs__image-wrap">
+              <picture>
+                <source srcset="img/how-consult@four@320.jpg" media="(max-width: 440px)">
+                <source srcset="img/how-consult@four@768.jpg" media="(max-width: 962px)">
+                <source srcset="img/how-consult@four@1024.jpg" media="(max-width: 1280px)">
+                <img class="tabs__image" src="img/how-consult@four@desktop.jpg" alt="Проводим консультацию">
+              </picture>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -141,31 +207,68 @@
       <div class="container">
         <h2 class="questions__title section-title">Часто задаваемые вопросы</h2>
 
-        <ul class="accordion reset-list">
-          <li class="accordion__item">
+        <ul class="accordion reset-list accordion-container">
+          <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn reset-btn">Из чего формируется конечная стоимость проекта?</button>
+              <button class="accordion__btn reset-btn ac-trigger">Из чего формируется конечная стоимость проекта?</button>
             </h3>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса  призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы.
+                Но высококачественный прототип будущего проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых факторов.</p>
+                <p class="text">Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определённых слоёв населения, а значит, должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно положительном свете.</p>
+              </div>
+            </div>
+
           </li>
-          <li class="accordion__item">
+          <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height1024 reset-btn">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
+              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
             </h3>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus totam a nam repudiandae ad illum magnam fugit, voluptatum in at similique qui, eum amet illo ex facere accusamus esse.</p>
+              </div>
+            </div>
+
           </li>
-          <li class="accordion__item">
+          <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height768 reset-btn">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger">Я выбираю между разными компаниями. В чём ваше отличие?</button>
             </h3>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus totam a nam repudiandae ad illum magnam fugit, voluptatum in at similique qui, eum amet illo ex facere accusamus esse.</p>
+              </div>
+            </div>
+
           </li>
-          <li class="accordion__item">
+          <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height1024 reset-btn">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
+              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
             </h3>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus totam a nam repudiandae ad illum magnam fugit, voluptatum in at similique qui, eum amet illo ex facere accusamus esse.</p>
+              </div>
+            </div>
+
           </li>
-          <li class="accordion__item">
+          <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height768 reset-btn">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
             </h3>
+
+            <div class="accordion__content ac-panel">
+              <div class="accordion__content-wrap">
+                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus repellendus totam a nam repudiandae ad illum magnam fugit, voluptatum in at similique qui, eum amet illo ex facere accusamus esse.</p>
+              </div>
+            </div>
+
           </li>
         </ul>
       </div>
