@@ -33,6 +33,14 @@
 
   /* transitions */
   --short: .3s;
+
+  /* Hero-slider */
+  --swiper-pagination-color: #fff;
+  --swiper-pagination-bullet-width: 15px;
+  --swiper-pagination-bullet-height: 15px;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+  --swiper-pagination-bullet-inactive-color: #CACACA;
+  --swiper-pagination-bullet-inactive-opacity: 1;
 }
 
 @media (max-width: 576px) {
@@ -40,5 +48,8 @@
     --container-padding: 15px;
     --default-fs: 14px;
     --default-lh: 28px;
+
+    --swiper-pagination-bullet-width: 10px;
+    --swiper-pagination-bullet-height: 10px;
   }
 }

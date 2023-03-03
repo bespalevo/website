@@ -1,7 +1,4 @@
 
-/* .hero {
-  padding-bottom: 50px;
-} */
 
 .hero__wrapper {
   position: relative;
@@ -22,10 +19,29 @@
   bottom: 0;
   left: 0;
   border-radius: 32px;
+  overflow: hidden;
+}
+
+.hero__slide {
   background-color: var(--gray-blue);
-  background-image: url('/img/low-angle-photo-of-balconies.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.hero__slide--one {
+  background-image: url('/img/low-angle-photo-of-balconies.jpg');
+}
+
+.hero__slide--two {
+  background-image: url('/img/slide_hero_foto@two@desktop.jpg');
+}
+
+.hero__slide--three {
+  background-image: url('/img/slide_hero_foto@three@desktop.jpg');
+}
+
+.hero__slider-pagination.swiper-pagination {
+  bottom: 20px;
 }
 
 .hero__title {
@@ -61,10 +77,6 @@
     padding: 160px 77px;
   }
 
-  .hero__slider {
-    background-image: url(../img/slide_hero_foto@1024.jpg);
-  }
-
   .hero__title {
     margin-bottom: 16px;
     font-size: 60px;
@@ -79,6 +91,18 @@
   .hero__text:last-of-type {
     margin-bottom: 60px;
   }
+
+  .hero__slide--one {
+    background-image: url('/img/slide_hero_foto@1024.jpg');
+  }
+
+  .hero__slide--two {
+    background-image: url('/img/slide_hero_foto@two@1024.jpg');
+  }
+
+  .hero__slide--three {
+    background-image: url('/img/slide_hero_foto@three@1024.jpg');
+  }
 }
 
 @media (max-width: 800px) {
@@ -87,7 +111,6 @@
   }
 
   .hero__slider {
-    background-image: url(../img/slide_hero_foto@768.jpg);
     border-radius: 24px;
   }
 
@@ -99,6 +122,18 @@
   .hero__text {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .hero__slide--one {
+    background-image: url('/img/slide_hero_foto@768.jpg');
+  }
+
+  .hero__slide--two {
+    background-image: url('/img/slide_hero_foto@two@768.jpg');
+  }
+
+  .hero__slide--three {
+    background-image: url('/img/slide_hero_foto@three@768.jpg');
   }
 }
 
@@ -131,8 +166,23 @@
   }
 
   .hero__slider {
-    background-image: url(../img/slide_hero_foto@320.jpg);
     border-radius: 16px;
+  }
+
+  .hero__slider-pagination.swiper-pagination {
+    bottom: 7px;
+  }
+
+  .hero__slide--one {
+    background-image: url('/img/slide_hero_foto@320.jpg');
+  }
+
+  .hero__slide--two {
+    background-image: url('/img/slide_hero_foto@two@320.jpg');
+  }
+
+  .hero__slide--three {
+    background-image: url('/img/slide_hero_foto@three@320.jpg');
   }
 }
 
