@@ -11,14 +11,6 @@
   transition-property: opacity, filter;
 }
 
-.hamburger:hover {
-  /* opacity: .7; */
-}
-
-.hamburger.is-active:hover {
-  /* opacity: .7; */
-}
-
 .hamburger.is-active .hamburger__inner,
 .hamburger.is-active .hamburger__inner::before,
 .hamburger.is-active .hamburger__inner::after {
