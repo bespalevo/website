@@ -259,6 +259,7 @@
 
   .header__search-form {
     top: 0;
+    left: 0;
     right: 0;
     width: 100%;
     min-width: 320px;
