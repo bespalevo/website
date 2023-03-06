@@ -44,21 +44,21 @@
             <li class="header__menu-item"><a class="header__menu-link" href="#">Контакты</a></li>
           </ul>
         </div>
-        <button class="header__search-btn reset-btn js-open-search" type="button">
+        <button class="header__search-btn reset-btn js-open-search" type="button" aria-label="Кнопка поиска">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="currentColor"></rect>
             <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"></path>
           </svg>
         </button>
         <form class="header__search-form js-form" action="/" method="GET">
-          <input class="header__search-input" type="text" placeholder="Что будем искать?">
-          <button class="header__search-btn header__search-btn--submit reset-btn" type="submit">
+          <input class="header__search-input" type="text" placeholder="Что будем искать?" aria-label="Форма заполнения - Что будем искать?">
+          <button class="header__search-btn header__search-btn--submit reset-btn" type="submit" aria-label="Кнопка поиска в форме поиска">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="7.56126" height="1.89031" transform="matrix(0.713342 0.700816 -0.713342 0.700816 18.6064 17.3762)" fill="currentColor"></rect>
               <path d="M20.9303 10.7726C20.9303 16.1533 16.4855 20.5452 10.9652 20.5452C5.44478 20.5452 1 16.1533 1 10.7726C1 5.39198 5.44478 1 10.9652 1C16.4855 1 20.9303 5.39198 20.9303 10.7726Z" stroke="currentColor" stroke-width="2"></path>
             </svg>
           </button>
-          <button class="header__close-btn reset-btn js-close-search" type="button">
+          <button class="header__close-btn reset-btn js-close-search" type="button" aria-label="Кнопка закрытия формы поиска">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect x="8.9541" y="7.30432" width="11.6645" height="2.33291" transform="rotate(45 8.9541 7.30432)" fill="currentColor"/>
               <rect x="7.30469" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30469 15.5524)" fill="currentColor"/>
@@ -231,7 +231,7 @@
         <ul class="accordion reset-list accordion-container">
           <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn reset-btn ac-trigger">Из чего формируется конечная стоимость проекта?</button>
+              <button class="accordion__btn reset-btn ac-trigger" aria-label="Кнопка открытия аккордиона">Из чего формируется конечная стоимость проекта?</button>
             </h3>
 
             <div class="accordion__content ac-panel">
@@ -245,7 +245,7 @@
           </li>
           <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
+              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger" aria-label="Кнопка открытия аккордиона">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</button>
             </h3>
 
             <div class="accordion__content ac-panel">
@@ -257,7 +257,7 @@
           </li>
           <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger">Я выбираю между разными компаниями. В чём ваше отличие?</button>
+              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger" aria-label="Кнопка открытия аккордиона">Я выбираю между разными компаниями. В чём ваше отличие?</button>
             </h3>
 
             <div class="accordion__content ac-panel">
@@ -269,7 +269,7 @@
           </li>
           <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
+              <button class="accordion__btn accordion__btn--height1024 reset-btn ac-trigger" aria-label="Кнопка открытия аккордиона">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией?</button>
             </h3>
 
             <div class="accordion__content ac-panel">
@@ -281,7 +281,7 @@
           </li>
           <li class="accordion__item ac">
             <h3 class="accordion__title">
-              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
+              <button class="accordion__btn accordion__btn--height768 reset-btn ac-trigger" aria-label="Кнопка открытия аккордиона">Могу ли я вернуть деньги на каком-либо из этапов работ?</button>
             </h3>
 
             <div class="accordion__content ac-panel">
@@ -339,11 +339,6 @@
           <textarea class="feedback__input feedback__input--textarea" name="message" placeholder="Сообщение"></textarea>
           <div class="feedback__form-bottom">
             <button class="btn feedback__submit--btn reset-btn" type="submit">Отправить данные</button>
-            <!-- <label class="feedback__label">
-              <input class="feedback__checkbox visually-hidden" type="checkbox" name="personal">
-              <span class="feedback__visual-check"></span>
-              <span class="feedback__check-text">Согласен на обработку данных</span>
-            </label> -->
           </div>
         </form>
       </section>
