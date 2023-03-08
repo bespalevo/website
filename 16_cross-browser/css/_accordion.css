@@ -41,6 +41,7 @@
 .accordion__btn:focus {
   color: var(--orange);
   cursor: pointer;
+  outline: none;
 }
 
 .accordion__btn::after {
