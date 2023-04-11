@@ -1,0 +1,37 @@
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+
+.contacts {
+  overflow-x: hidden; /* это нужно для того, чтоб не создавалось горизонтального скролла из-за скроллбара справа на десктопной версии, который не учитывается при задании измерений в vw */
+  padding-top: 40px;
+}
+
+.container_map {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.contacts__map {
+  position: relative;
+  max-width: 600px;
+}
+
+.contacts__map::before {
+  content: "";
+  display: block;
+  padding-top: 70%;
+}
+
+.contacts__map-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}
