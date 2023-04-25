@@ -62,6 +62,7 @@
   transition: border-color .3s ease;
 }
 
+
 .visible-checkbox::before {
   content: "";
   position: absolute;
@@ -77,6 +78,10 @@
 }
 
 .checkbox:focus ~ .visible-checkbox {
+  border-color: var(--gold);
+}
+
+.checkbox:checked ~ .visible-checkbox {
   background-image: url(../img/Rectangle\ 991.svg);
   background-repeat: no-repeat;
   background-position: center center;

@@ -1,4 +1,10 @@
 
+.js-tooltip-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
 .container__tooltip {
   width: 375px;
   height: 160px;
@@ -37,6 +43,7 @@
   border-radius: 0;
   background-color: #666666;
   color: white;
+  font-size: 12px;
 }
 
 .tippy-box[data-theme~='test-tooltip'][data-placement^='top'] > .tippy-arrow::before {

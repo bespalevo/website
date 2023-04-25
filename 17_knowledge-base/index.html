@@ -9,6 +9,9 @@
   <link href="css/_style.css" rel="stylesheet">
   <link href="css/_tooltip.css" rel="stylesheet">
 
+  <link href="https://unpkg.com/simplebar@latest/dist/simplebar.css" rel="stylesheet">
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+
   <script src="js/choices.js" defer></script>
   <script src="js/select.js" defer></script>
 
@@ -16,6 +19,11 @@
   <script src="https://unpkg.com/tippy.js@6" defer></script>
   <script src="js/script.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript" defer></script>
+  <script src="js/map.js" defer></script>
+  <script src="js/form.js" defer></script>
+
+  <script src="js/inputmask.min.js" defer></script>
+  <script src="js/just-validate.min.js" defer></script>
 
 </head>
 
@@ -91,31 +99,58 @@
       </li>
 
       <li class="list__defoult">
-        <div class="container_map">
           <div class="contacts__map">
             <div class="contacts__map-wrap" id="map"></div>
           </div>
+      </li>
+
+      <li class="list__defoult">
+        <div class="container__scrollbar" data-simplebar>
+            <p class="text__scrollbar">
+              Сложно сказать, почему многие известные личности представлены в исключительно положительном свете. Лишь активно развивающиеся страны третьего мира будут объективно рассмотрены соответствующими инстанциями. Мы вынуждены отталкиваться от того, что высокотехнологичная концепция общественного уклада представляет собой интересный эксперимент проверки глубокомысленных рассуждений. Имеется спорная точка зрения, гласящая примерно следующее: непосредственные участники технического прогресса освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, обнародованы. Значимость этих проблем настолько очевидна, что социально-экономическое развитие, а также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для первоочередных требований.
+            </p>
         </div>
+      </li>
+
+      <li class="list__defoult">
+        <form class="form" action="">
+          <div class="container-form">
+            <label class="label-form" for="">
+              <input class="input-name" data-validate-field="name" name="Имя" type="text" placeholder="Имя">
+            </label>
+
+            <label class="label-form" for="">
+              <input class="input-tel" data-validate-rules="phone" data-validate-field="tel" name="tel" type="tel" placeholder="Телефон">
+            </label>
+
+            <label class="label-form" for="">
+              <input class="input-mail" data-validate-field="mail" name="email" type="email" placeholder="Email">
+            </label>
+
+            <button class="form-btn">Заказать</button>
+          </div>
+        </form>
+
       </li>
 
       <li class="list__defoult">
         <div class="container__tooltip">
           <p class="text">
             Следует отметить, что социально-экономическое развитие способствует повышению качества переосмысления внешнеэкономических политик.
-            <span class="js-tooltip-btn" data-tippy-content="Глава 2, страница 176"><span class="img__tooltip">
+            <button class="js-tooltip-btn" data-tippy-content="Глава 2, страница 176"><span class="img__tooltip">
               <svg class="svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M8 16C12.4183 16 16 12.4183 16 8C16 3.58172 12.4183 0 8 0C3.58172 0 0 3.58172 0 8C0 12.4183 3.58172 16 8 16ZM8 3C7.33333 3 7 3.31919 7 3.95758C7 4.60026 7.33333 4.92159 8 4.92159C8.33333 4.92159 8.58233 4.83805 8.74699 4.67095C8.91566 4.49957 9 4.26178 9 3.95758C9 3.31919 8.66667 3 8 3ZM7.07831 13H8.91566V5.81491H7.07831V13Z" fill="#BCBCBC"></path>
                 </svg>
-            </span></span>
+            </span></button>
           </p>
         </div>
-        </ul>
+        </li></ul>
         </div>
-      </li>
-    </ul>
 
 
-  </div>
+
+
+
 </body>
 </html>
 

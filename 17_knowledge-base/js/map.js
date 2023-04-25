@@ -21,9 +21,7 @@
       {},
       {
         iconLayout: "default#image",
-        iconImageHref: <svg width="8" height="7" viewBox="0 0 8 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1 3.47742L3.10291 5.58033L7.58033 1.10291" stroke="#CCB26E"/>
-        </svg>
+        iconImageHref: `img/Subtract.svg`
         ,
         iconImageSize: [40, 40],
         iconImageOffset: [-20, -40],

@@ -1,0 +1,42 @@
+
+.container-form {
+  width: 440px;
+  height: 410px;
+  background-color: #000000;
+  padding-left: 30px;
+  padding-top: 38px;
+  /* opacity: 0.4; */
+  border-radius: 10px;
+}
+
+.input-name,
+.input-tel,
+.input-mail {
+  /* opacity: 1; */
+  width: 380px;
+  height: 60px;
+  border-radius: 10px;
+  margin-bottom: 31px;
+  padding-left: 20px;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+}
+
+.input-name::placeholder,
+.input-tel::placeholder,
+.input-mail::placeholder {
+  color: #999999;
+}
+
+.form-btn {
+  width: 192px;
+  height: 60px;
+  text-align: center;
+  padding: 0;
+  background: #FF5C00;
+  color: var(--white);
+  border-radius: 10px;
+  cursor: pointer;
+}
