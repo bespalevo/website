@@ -23,7 +23,6 @@
       rule: 'minLength',
       value: 3,
       errorMessage: 'Имя должно содержать хотя бы 3 буквы',
-      color: red,
     },
     {
       rule: 'maxLength',

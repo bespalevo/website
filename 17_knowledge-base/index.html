@@ -20,10 +20,10 @@
   <script src="js/script.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript" defer></script>
   <script src="js/map.js" defer></script>
-  <script src="js/form.js" defer></script>
 
   <script src="js/inputmask.min.js" defer></script>
   <script src="js/just-validate.min.js" defer></script>
+  <script src="js/form.js" defer></script>
 
 </head>
 
@@ -113,24 +113,23 @@
       </li>
 
       <li class="list__defoult">
-        <form class="form" action="">
+        <form class="form" action="/">
           <div class="container-form">
-            <label class="label-form" for="">
-              <input class="input-name" data-validate-field="name" name="Имя" type="text" placeholder="Имя">
+            <label class="label-form">
+              <input class="input-name" name="Имя" type="text" placeholder="Имя">
             </label>
 
-            <label class="label-form" for="">
-              <input class="input-tel" data-validate-rules="phone" data-validate-field="tel" name="tel" type="tel" placeholder="Телефон">
+            <label class="label-form">
+              <input class="input-tel" name="tel" type="tel" placeholder="Телефон">
             </label>
 
-            <label class="label-form" for="">
-              <input class="input-mail" data-validate-field="mail" name="email" type="email" placeholder="Email">
+            <label class="label-form">
+              <input class="input-mail" name="email" type="email" placeholder="Email">
             </label>
 
-            <button class="form-btn">Заказать</button>
+            <button class="form-btn" type="submit">Заказать</button>
           </div>
         </form>
-
       </li>
 
       <li class="list__defoult">

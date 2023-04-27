@@ -9,7 +9,6 @@
 
 .simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
   width: 6px;
-  height: 70px;
   margin-top: 7px;
   margin-right: 6px;
   background-color: var(--gold);

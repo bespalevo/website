@@ -36,7 +36,9 @@ body {
 }
 
 .list-wraper {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
 
 .list__defoult {
