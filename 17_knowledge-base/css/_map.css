@@ -1,0 +1,33 @@
+
+[class*="ground-pane"] {
+  filter: grayscale(1);
+}
+
+.contacts__map {
+  width: 460px;
+  height: 460px;
+}
+
+.contacts {
+  overflow-x: hidden; /* это нужно для того, чтоб не создавалось горизонтального скролла из-за скроллбара справа на десктопной версии, который не учитывается при задании измерений в vw */
+  padding-top: 40px;
+}
+
+.contacts__map {
+  position: relative;
+  max-width: 600px;
+}
+
+.contacts__map::before {
+  content: "";
+  display: block;
+  padding-top: 70%;
+}
+
+.contacts__map-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+}

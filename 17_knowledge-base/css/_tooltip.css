@@ -1,0 +1,60 @@
+
+.js-tooltip-btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.container__tooltip {
+  width: 375px;
+  height: 160px;
+  background-color: var(--white);
+  margin-bottom: 29px;
+  padding: 20px 78px 20px 29px
+}
+
+.text {
+  position: absolute;
+  max-width: 268px;
+  max-height: 120px;
+  margin: 0;
+  line-height: 23px;
+}
+
+.img__tooltip {
+  display: inline;
+  position: relative;
+  content: "";
+  margin-left: 2px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: url('../img/tooltip_no.svg');
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.svg:hover > path {
+  fill: var(--gold);
+}
+
+.tippy-box[data-theme~='test-tooltip'] {
+  display: block;
+  border-radius: 0;
+  background-color: #666666;
+  color: white;
+  font-size: 12px;
+}
+
+.tippy-box[data-theme~='test-tooltip'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: #666666;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='bottom'] > .tippy-arrow::before {
+  border-bottom-color: #666666;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='left'] > .tippy-arrow::before {
+  border-left-color: darkslateblue;
+}
+.tippy-box[data-theme~='test-tooltip'][data-placement^='right'] > .tippy-arrow::before {
+  border-right-color: darkslateblue;
+}
