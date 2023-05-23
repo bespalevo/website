@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap</title>
+
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/18.8 bootstrap-grid.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between header__row">
+        <div class="header__logo-wrap col-auto col-md-3 col-lg-2">
+          <a class="header__logo">
+            <img class="header__image-logo" src="img/skillbox-logo.svg" alt="логотип">
+          </a>
+        </div>
+        <div class="header__burger-wrap col-auto">
+          <button class="header__burger burger reset-btn" aria-label="Открыть меню" aria-expanded="false">
+            <span class="burger__line"></span>
+          </button>
+        </div>
+        <nav class="header__nav col-md-9">
+          <ul class="reset-list header__menu">
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Главная</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">О нас</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Преподаватели</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="" class="header__menu-link">Курсы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="row">
+        <div class="hero__wrap col-auto col-md-9">
+          <h3 class="hero__title">Курсы 3D моделирования</h3>
+          <p class="hero__text">
+            Следует отметить, что существующая теория способствует повышению качества благоприятных перспектив. Не следует, однако, забывать.
+          </p>
+          <button class="btn reset-btn" type="submit">Выбрать курс</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
