@@ -1,6 +1,6 @@
 
-.hero__wrap {
-  max-width: 100%;
+.hero {
+  /* max-width: 100%; */
   background-image: url(../img/hero_fon_mobile.jpg);
   background-repeat: no-repeat;
   background-size: 100%;
@@ -27,7 +27,7 @@
 }
 
 @media (min-width: 576px) {
-  .hero__wrap {
+  .hero {
     background-image: url(../img/hero_fon_510.jpg);
   }
 
@@ -35,10 +35,37 @@
     font-size: 50px;
     line-height: 50px;
     padding-top: 77px;
+    margin-bottom: 15px;
   }
 
   .hero__text {
     font-size: 18px;
     line-height: 27px;
+    margin-bottom: 62px;
   }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: url(../img/hero_fon_690.jpg);
+  }
+
+  .hero__image-wrap {
+    position: relative;
+    padding-top: 117px;
+  }
+
+  .hero__title {
+    padding-top: 130px;
+  }
+}
+
+
+@media (min-width: 1440px) {
+  .hero__title {
+    font-size: 60px;
+    line-height: 100%;
+    margin-bottom: 27px;
+  }
+
 }

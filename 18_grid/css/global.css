@@ -47,3 +47,13 @@ body {
   background-color: var(--blue);
   color: var(--white);
 }
+
+@media (min-width: 576px) {
+  .btn {
+    width: 270px;
+    height: 69px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 135px;
+  }
+}
