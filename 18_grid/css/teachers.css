@@ -72,10 +72,6 @@
     margin-bottom: 24px;
   }
 
-  .teachers__info {
-    max-width: 240px;
-  }
-
   .teachers__wrap {
     padding-bottom: 51px;
   }
@@ -111,10 +107,6 @@
     padding-bottom: 7px;
   }
 
-  .teachers__info {
-    max-width: 330px;
-  }
-
   .image__items {
     width: 330px;
   }
@@ -139,10 +131,6 @@
 @media (min-width: 1440px) {
   .teachers {
     padding-bottom: 43px;
-  }
-
-  .teachers__info {
-    max-width: 254px;
   }
 
   .image__items {

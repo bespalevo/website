@@ -29,9 +29,14 @@
   display: none;
 }
 
+.hero__btn {
+  margin-bottom: 51px;
+}
+
 @media (min-width: 576px) {
   .hero {
     background-image: url(../img/hero_fon_510.jpg);
+    padding-bottom: 84px;
   }
 
   .hero__title {
@@ -45,6 +50,13 @@
     font-size: 18px;
     line-height: 27px;
     margin-bottom: 62px;
+  }
+
+  .hero__btn {
+    width: 270px;
+    padding: 24px;
+    font-size: 18px;
+    line-height: 21px;
   }
 
 }
@@ -72,6 +84,8 @@
 @media (min-width: 1440px) {
   .hero {
     background-image: url(../img/hero_fon_1110.jpg);
+    padding-bottom: 0;
+    min-height: 620px;
   }
 
   .hero__title {
@@ -85,6 +99,7 @@
 
   .hero__image-wrap {
     margin-top: 15px;
+    min-height: 593px;
     background-image: url(../img/hero_image_1440.png);
   }
 }
