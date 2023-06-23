@@ -4,7 +4,7 @@
   height: 80px;
 }
 
-.footer_list-icon {
+.footer__list-icon {
   display: flex;
   justify-content: center;
   padding-top: 28px;
