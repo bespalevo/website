@@ -1,0 +1,30 @@
+
+.footer__info {
+  background-color: var(--dark-blue);
+  height: 80px;
+}
+
+.footer__list-icon {
+  display: flex;
+  justify-content: center;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 28px;
+}
+
+.footer__icon {
+  padding-right: 30px;
+}
+
+.footer__skillbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2px;
+}
+
+@media (min-width: 1440px) {
+  .footer__skillbox {
+    padding-top: 3px;
+  }
+}
