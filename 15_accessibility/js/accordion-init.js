@@ -1,3 +1,0 @@
-(() => {
-  new Accordion(".accordion-container");
-})();
